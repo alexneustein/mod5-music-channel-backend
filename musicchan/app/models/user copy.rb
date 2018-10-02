@@ -1,7 +1,8 @@
 class User < ApplicationRecord
-  has_many :songs
-  has_many :messages
-  has_many :channels, through: :messages
+  # has_many :messages
+  # has_many :channels, through: :messages
+
+  validates :username, presence: true
 
   def self.all_usernames
     users = User.all

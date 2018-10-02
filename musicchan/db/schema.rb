@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_25_141011) do
+ActiveRecord::Schema.define(version: 2018_10_01_135731) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
@@ -37,6 +37,20 @@ ActiveRecord::Schema.define(version: 2018_09_25_141011) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "channels", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.string "content"
+    t.string "user_id"
+    t.integer "channel_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "songs", force: :cascade do |t|
     t.string "title", null: false
     t.integer "user_id"
@@ -51,6 +65,8 @@ ActiveRecord::Schema.define(version: 2018_09_25_141011) do
     t.integer "usertype"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
+    t.string "identifier"
   end
 
 end
