@@ -47,8 +47,6 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    alsa-rawmidi (0.3.2)
-      ffi (~> 1.0)
     arel (9.0.0)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -72,8 +70,6 @@ GEM
     faker (1.9.1)
       i18n (>= 0.7)
     ffi (1.9.25)
-    ffi-coremidi (0.4.1)
-      ffi (~> 1.9, >= 1.9.6)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.1.0)
@@ -92,9 +88,6 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (0.9.0)
-    midi-jruby (0.1.6)
-    midi-winmm (0.1.10)
-      ffi (>= 1.0)
     mimemagic (0.3.2)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
@@ -154,11 +147,6 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    unimidi (0.4.8)
-      alsa-rawmidi (~> 0.3, >= 0.3.1)
-      ffi-coremidi (~> 0.3, >= 0.3.5)
-      midi-jruby (~> 0.1, >= 0.1.4)
-      midi-winmm (~> 0.1, >= 0.1.10)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -185,7 +173,6 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
-  unimidi
   virtus
 
 RUBY VERSION
