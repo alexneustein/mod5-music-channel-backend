@@ -23,7 +23,7 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   config.web_socket_server_url = "wss://pianocast-backend.herokuapp.com/cable"
-  config.action_cable.allowed_request_origins = ['https://pianocast-backend.herokuapp.com', 'http://pianocast-backend.herokuapp.com', 'https://pianocast-frontend.herokuapp.com', 'http://pianocast-frontend.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['https://pianocast-backend.herokuapp.com', 'http://pianocast-backend.herokuapp.com', 'https://pianocast-frontend.herokuapp.com', 'http://pianocast-frontend.herokuapp.com', 'https://pianocast.herokuapp.com', 'http://pianocast.herokuapp.com']
 
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
