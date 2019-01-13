@@ -2,4 +2,5 @@
 musicchan/db/.DS_Store
 app/.DS_Store
 .DS_Store
-.DS_Store
+tmp
+tmp/cache
