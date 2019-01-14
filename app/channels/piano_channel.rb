@@ -8,9 +8,9 @@ class PianoChannel < ApplicationCable::Channel
   end
 
   def onPlay(data)
-    @message = data
+    @note = data
     # @users = self.count_unique_connections
-    # ChatChannel.broadcast_to 'chat_channel', message: @message
-    ActionCable.server.broadcast('piano_channel', message: @message)
+    # ChatChannel.broadcast_to 'chat_channel', note: @note
+    ActionCable.server.broadcast('piano_channel', note: @note)
   end
 end
