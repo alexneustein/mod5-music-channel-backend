@@ -7,7 +7,7 @@ class PianoChannel < ApplicationCable::Channel
     # Any cleanup needed when channel is unsubscribed
   end
 
-  def onChat(data)
+  def onPlay(data)
     @message = data
     # @users = self.count_unique_connections
     # ChatChannel.broadcast_to 'chat_channel', message: @message
